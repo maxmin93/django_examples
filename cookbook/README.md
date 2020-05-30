@@ -27,9 +27,10 @@ open browser [http://localhost:8000/graphql/]
 
 2) Postman 으로 쿼리하기
 
-open postman
+POST [http://localhost:8000/graphql/api]
 
-<POST> [http://localhost:8000/graphql/api]
+- parameter 사용
+- alias 사용
 
 <p align="center">
 <img height="400" src="https://github.com/maxmin93/graphene_examples/blob/master/cookbook/doc/graphene_examples-cookbook-Postman.png">
