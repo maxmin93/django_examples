@@ -21,7 +21,9 @@ python manage.py runserver 0.0.0.0:8000
 
 open browser [http://localhost:8000/graphql/]
 
-<img align="left" height="400" src="https://github.com/maxmin93/graphene_examples/blob/master/cookbook/doc/graphene_examples-cookbook-graphi.png" />
+<p align="center">
+<img height="400" src="https://github.com/maxmin93/graphene_examples/blob/master/cookbook/doc/graphene_examples-cookbook-graphi.png">
+</p>
 
 2) Postman 으로 쿼리하기
 
@@ -29,8 +31,9 @@ open postman
 
 <POST> [http://localhost:8000/graphql/api]
 
-<img align="left" height="400" src="https://github.com/maxmin93/graphene_examples/blob/master/cookbook/doc/graphene_examples-cookbook-Postman.png" />
-
+<p align="center">
+<img height="400" src="https://github.com/maxmin93/graphene_examples/blob/master/cookbook/doc/graphene_examples-cookbook-Postman.png">
+</p>
 
 ## webapp urls
 
