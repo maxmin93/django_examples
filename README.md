@@ -1,4 +1,4 @@
-# graphene_examples
+# Django_examples
 
 Python library for GraphQL
 
