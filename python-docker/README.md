@@ -52,3 +52,32 @@ FLASK_APP=app.py flask run -h 0.0.0.0 -p 9991
 Browser open : [http://127.0.0.1:9991/](http://127.0.0.1:9991/)
 
 <img height="420px" src="https://github.com/maxmin93/django_examples/blob/master/python-docker/python-docker-tutorial.png">
+
+-------------------
+
+## Write Dockerfile
+
+- 참고 [Activating a Conda environment in your Dockerfile](https://pythonspeed.com/articles/activate-conda-dockerfile/)
+
+Working on, not successfully
+
+```
+FROM continuumio/miniconda3
+
+WORKDIR /app
+
+# Create the environment:
+COPY environment.yml .
+RUN conda env create -f environment.yml
+
+# Make RUN commands use the new environment:
+SHELL ["conda", "run", "-n", "myenv", "/bin/bash", "-c"]
+
+# Make sure the environment is activated:
+RUN echo "Make sure flask is installed:"
+RUN python -c "import flask"
+
+# The code to run when container is started:
+COPY run.py .
+ENTRYPOINT ["conda", "run", "-n", "myenv", "python", "run.py"]
+```
